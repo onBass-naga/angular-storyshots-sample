@@ -1,0 +1,1 @@
+# angular-storyshots-sample
