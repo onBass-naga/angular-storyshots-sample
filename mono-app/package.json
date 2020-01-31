@@ -37,6 +37,7 @@
     "@storybook/addon-actions": "^5.3.9",
     "@storybook/addon-links": "^5.3.9",
     "@storybook/addon-notes": "^5.3.9",
+    "@storybook/addon-storyshots": "^5.3.9",
     "@storybook/addons": "^5.3.9",
     "@storybook/angular": "^5.3.9",
     "@types/jasmine": "~3.5.0",
@@ -71,7 +72,8 @@
       "@core/(.*)": "<rootDir>/src/app/core/$1",
       "@env": "<rootDir>/src/environments/environment",
       "@src/(.*)": "<rootDir>/src/src/$1",
-      "@state/(.*)": "<rootDir>/src/app/state/$1"
+      "@state/(.*)": "<rootDir>/src/app/state/$1",
+      "jest-preset-angular/(.*)": "<rootDir>/node_modules/jest-preset-angular/build/$1"
     },
     "globals": {
       "ts-jest": {
