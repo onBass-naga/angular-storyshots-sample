@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run start:admin & npm run start:customre",
+    "start:admin": "ng serve --project=admin",
+    "start:customre": "ng serve --project=customer",
+    "build": "npm run build:admin && npm run build:customre",
+    "build:admin": "ng build --project=admin",
+    "build:customre": "ng build --project=customer",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
