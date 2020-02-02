@@ -9,7 +9,10 @@
     "build": "npm run build:admin && npm run build:customre",
     "build:admin": "ng build --project=admin",
     "build:customre": "ng build --project=customer",
-    "test": "jest",
+    "test": "npm run test:common && npm run test:admin && npm run test:customer",
+    "test:admin": "jest --config=projects/admin/jest.config.js",
+    "test:customer": "jest --config=./projects/customer/jest.config.js",
+    "test:common": "jest --config=./projects/common/jest.config.js",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "test:watch": "jest --watch"
